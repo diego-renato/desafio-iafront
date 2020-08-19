@@ -1,6 +1,6 @@
 import click
 import os
-from sklearn.preprocessing import Normalizer
+from sklearn.preprocessing import MaxAbsScaler
 
 from desafio_iafront.data.saving import save_partitioned
 from desafio_iafront.jobs.common import prepare_dataframe, transform
@@ -13,7 +13,7 @@ from desafio_iafront.jobs.escala_pedidos.constants import get_departamentos_all
 @click.option('--data-final', type=click.DateTime(formats=["%d/%m/%Y"]))
 @click.option('--departamentos', type=str, help="Departamentos separados por virgula")
 def main(visitas_com_conversao, saida, data_inicial, data_final, departamentos):
-    if departamentos.lower()=="all":
+    if departamentos.lower() == "all":
         departamentos_lista = get_departamentos_all()
     else:
         departamentos_lista = [departamento.strip() for departamento in departamentos.split(",")]
@@ -21,12 +21,14 @@ def main(visitas_com_conversao, saida, data_inicial, data_final, departamentos):
     result = prepare_dataframe(departamentos_lista, visitas_com_conversao, data_inicial, data_final)
 
     # Faz a escala dos valores
-    result = transform(result, Normalizer())
+    result = transform(result, MaxAbsScaler())
 
     # salva resultado numa nova pasta
-    saida_new = os.path.join(saida, "normalization")
-    os.mkdir(saida_new)
-    save_partitioned(result, saida_new, ['data', 'hora'])
+    saida = os.path.join(saida, "max_abs_scaler")
+    os.mkdir(saida)
+
+    save_partitioned(result, saida, ['data', 'hora'])
+
 
 if __name__ == '__main__':
     main()

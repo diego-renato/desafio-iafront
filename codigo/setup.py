@@ -19,8 +19,8 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'prepara-pedidos=desafio_iafront.jobs.pedidos:main',
-            'cria-visitas=desafio_iafront.jobs.create_visits:main'
+            'prepara_pedidos=desafio_iafront.jobs.pedidos.job:main',
+            'cria_visitas=desafio_iafront.jobs.create_visits:main'
         ]
     }
 )
