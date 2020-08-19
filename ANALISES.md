@@ -1,13 +1,14 @@
 ## Table of contents
 - [1. The problem](#1-the-problem)
 - [2. The data](#2-the-data)
-- [3. Comparing different scaler functions](#3-comparing-different-scaler-functions)
-    - [3.1. Data transformation: scatter and hist (01-06-2020 to 07-06-2020)](#scatter-plots)
-    - [3.2. Data transformation: scatter and hist (24-06-2020 to 30-06-2020)](#scatter-plots)
-- [4. The optimal number of clusters](#4-the-optimal-number-of-clusters)
-- [5. The optimal cluster algorithm](#5-the-optimal-cluster-algorithm)
-- [6. Evaluating the *conversão total* in each cluster](#6-evaluating-the-conversão-total-in-each-cluster)
-- [7. Answering the questions](#7-answering-the-questions)
+- [3. The library](#3-the-library)
+- [4. Comparing different scaler functions](#4-comparing-different-scaler-functions)
+    - [4.1. Data transformation: scatter and hist (01-06-2020 to 07-06-2020)](#scatter-plots)
+    - [4.2. Data transformation: scatter and hist (24-06-2020 to 30-06-2020)](#scatter-plots)
+- [5. The optimal number of clusters](#5-the-optimal-number-of-clusters)
+- [6. The optimal cluster algorithm](#6-the-optimal-cluster-algorithm)
+- [7. Evaluating the *conversão total* in each cluster](#7-evaluating-the-conversão-total-in-each-cluster)
+- [8. Answering the questions](#8-answering-the-questions)
 
 # 1. The problem
 B2W wants to know more about its customers, in the sense that B2W wants to know what is important to them, for this, B2W 
@@ -24,9 +25,19 @@ The dataset contains variables about the products, customer location and the tim
 
 The considered period is from 01/06/2020 to 31/07/2020. The departaments selected from this analyse are: agro industria e comercio, automotivo,
  brinquedos, casa conforto, eletrodomesticos, eletronicos, fashion calcados, informatica acessorios, telefonia.
-
-
-# 3. Comparing different scaler functions
+# 3. The library
+The developed library consists in processing raw data to obtain information about some variables. Some functions like *prepara_pedidos*, *prepare_conversao*
+ prepare the data to obtain the data joined or to obtain the *conversao* variable. The *standard_scaler*, *max_abs_scaler*, *min_max_scaler*, 
+ *normalization_scaler*, *power_transformer* and *robust_scaler* transform or scale the selected variables, the functions create a directory with the respective name of
+ the scale function. To obtain cluster there are 5 method considered, *kmeans*, *birch*, *mini_batch_kmeans*, *gaussian_mixture*, 
+ *bayesian_gaussian_mixture* and *spectral_clustering*, this functions also create a directory too. But before, to evaluate the optimal number of cluster, 
+ the *BIC_decision_plot*, *GAP_decision_plot* or *pca_plot* can help. Next, to evaluate the clusters considering the variables selected, the 
+ *confidential_intervals_plot* and *scatter_plot* can be useful. Finally the *time_series_plot* obtain a time series plot of the conversao variale by the date that can be
+ day, hour or by min. 
+ 
+ To reproduce this results, please execute the Makefile in the root of the project. The *run_all* create a directory to save the results and then it execute the pipeline.
+ To install in a virtualenv please use *pip3 install -e codigo/*. 
+# 4. Comparing different scaler functions
 After scaling the data, is important to see the behavior of the scaled or transformed data.
 In this section I compared the different scaler jobs from the considered in this project for the week 01-06-2020 - 07-06-2020 and
 the week 24/07/2020 - 30/08/2020 by scatter plots and histograms. The variables selected are <b>longitude</b>, <b>latitude</b> and <b>preço</b> because are variables
@@ -130,7 +141,7 @@ Some observation for this section:
 * The methods selected are standard, min-max and max abs scalers.
 * The distribution are not affected by the time as we can see in the graphics. 
 * The variable price is continuous uniform distributed(all points have the same weight).
-# 4. The optimal number of clusters
+# 5. The optimal number of clusters
 <b>OBS.</b> Because the distribution of the variables considered for clustering are not affected by the time, I decided to make decisions(optimal *K* and best clustering method) taking a sample like 1 week.
  
 The number of cluster is considered a hyperparameter, in the literature there are different ways to find the optimal number of cluster. 
@@ -179,7 +190,7 @@ In the next graph we can see different values of *K* with the respective GAP val
 The decision is to use *K*=6, as we can see in the Figure 4, the BIC decrease as the number of cluster increases but for number of cluster greater than 6 the BIC increases.
 The GAP statistic indicates that the optimal value is 8, so clearly we can see that the optimal number of cluster is between 6 and 8. Using these two references I decided to take *K*=6 and then evaluate if this make sense. 
  
-# 5. The optimal cluster algorithm
+# 6. The optimal cluster algorithm
 
 In this section, the three selected method for scaling data and three algorithms: kmeans, gaussian mixture and bayesian mixture are evaluated and compared one to one.
 I decided to plot the scatter plot from the section 3, and some other plot taking the confidence intervals. 
@@ -224,7 +235,7 @@ that the cluster 0 and 2 are different,  is the same from cluster 1 and 4, clust
 
 The chosen clustering method is bayesian gaussian mixture by vote of greater significant differences between clusters in the variables.
 
-# 6. Evaluating the conversão total in each cluster
+# 7. Evaluating the conversão total in each cluster
 
 Before clustering the dataset in the period 01/06/2020 - 31/07/2020, we are interested in the main objective: evaluate the main variables in each cluster.
 The conversão total is obtained taking the ratio of number of purchases to number of visits in such period. The next graphic shows the confidence interval of the main variable *conversão*.
@@ -271,13 +282,13 @@ Cluster                    |           Cluster
 <p>Figure 11: Time series(hours) *conversão* by cluster and boostrap confidencial intervals at 95%.</p>
 </div>
 
-# 7. Answering the questions
+# 8. Answering the questions
 
 * Usando uma semana de dados como entrada e vendo os gráficos, o que você pode dizer sobre cada uma das transformações?
  As transformações como normalization e power transformer mudam a distribuição dos pontos, por exemplo a transformação de power
  transformer utiliza uma variante do método Box Cox e o Box Cox utiliza a função logaritmica para ele correguir a falta de normalidade.
  Os métodos como standard, min max, max abs e robust scaler não mudam a distribuição dos pontos, estes tentam uniformizar as variáveis, porém
- o metodo standard scaler foi uns dos melhores. 
+ o método standard scaler foi uns dos melhores. 
 * Use uma semana diferente, o que você viu mudando?
 A distribuição dos pontos das variáveis não são afeitados através do tempo.
 * Quais colunas escolheu para gerar suas análises, e por quê?
