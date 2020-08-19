@@ -6,7 +6,7 @@
     - [3.2. Data transformation: scatter and hist (24-06-2020 to 30-06-2020)](#scatter-plots)
 - [4. The optimal number of clusters](#4-the-optimal-number-of-clusters)
 - [5. The optimal cluster algorithm](#5-the-optimal-cluster-algorithm)
-- [6. Evaluating the *conversão total* in each cluster](#6-evaluating-the-*-conversão-total-*-in-each-cluster)
+- [6. Evaluating the *conversão total* in each cluster](#6-evaluating-the-conversão-total-in-each-cluster)
 - [7. Answering the questions](#7-answering-the-questions)
 
 # 1. The problem
@@ -134,7 +134,7 @@ Some observation for this section:
  
 The number of cluster is considered a hyperparameter, in the literature there are different ways to find the optimal number of cluster. 
 For example from short datasets the hierarchical clustering is a good option(not in our case), the elbow method(graphics method) or 
-the GAP statistic(ca be used in any clustering method), but there is another and powered method using a distribution probability actually a 
+the GAP statistic(can be used in any clustering method), but there is another and powered method using a distribution probability, actually a 
 finite mixture distribution and computing some information criterion like AIC or BIC, it is the finite gaussian mixture. The gaussian mixture 
 is a parametric probability distribution from *K* gaussian or normal random variables. For short explanation let see the equation above
  
@@ -143,15 +143,15 @@ is a parametric probability distribution from *K* gaussian or normal random vari
 The *N(.)* denote a multivariate normal distribution with a vector of means and matrix of covariance, the 
 phi denote the probability for a *latent variable* belong a one population, the *latent variable* is actually the cluster and
 the number *K* is the number of cluster or populations. Please see [gaussian mixture](http://leap.ee.iisc.ac.in/sriram/teaching/MLSP_16/refs/GMM_Tutorial_Reynolds.pdf)
-if you want to see more details. One limitation is that the data can't be 5 normal multivariate distributed. 
+if you want to see more details. One limitation is that the data can't be 5 normal multivariate distributed(for our case). 
 
 <b>OBS.</b> The individual distribution of the variables doesn't say anything about if it is normal multivariate distributed.
 
 The benefit of using the gaussian mixture is that the dataset belows a multivariate distribution, they don´t need to be scaled
- and the log likelihood can be computed and also be compared for different k values (clusters). And also, we can predict the cluster from a given
+ and the log likelihood can be computed and also be compared for different k values (number of clusters). And also, we can predict the cluster from a given
  vector of observation with their respective probability.
  
-So, for our case, it is considered a grid of values, *K = 2,3,...,10* ,to compute the BIC (Bayesian information criterion) using train-test split. Then,
+So, for our case, it is considered a grid of values, *K = 2,3,...,15*, to compute the BIC (Bayesian information criterion) using train-test split. Then,
 the optimal number of cluster is the value of *K* that minimize the BIC in the train data and test data(30% of original data). This is important because we can evaluate in a
 unobserved dataset(Observation: The BIC penalizes the -2 log likelihood by the number of parameters *log(n)). The following graph shows the results obtained.
 
@@ -176,7 +176,7 @@ In the next graph we can see different values of *K* with the respective GAP val
 <br>
 
 The decision is to use *K*=6, as we can see in the Figure 4, the BIC decrease as the number of cluster increases but for number of cluster greater than 6 the BIC increases.
-The GAP statistic indicate that the optimal value is 8, so clearly we can see that the optimal number of cluster is between 6 and 8. Using these two references I decided to take *K*=6 and then evaluate if this make sense. 
+The GAP statistic indicates that the optimal value is 8, so clearly we can see that the optimal number of cluster is between 6 and 8. Using these two references I decided to take *K*=6 and then evaluate if this make sense. 
  
 # 5. The optimal cluster algorithm
 
@@ -208,11 +208,11 @@ Next, to take a decision between kmeans and bayesian gaussian mixture, the follo
 
 Variable                   | kmeans                     | bayesian gaussian mixture
 :-------------------------:|:-------------------------:|:-------------------------:
-Preço                      | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/preco_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/preco_confidence_interval_cluster_BGM.jpg" />
-Frete                      | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/frete_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/frete_confidence_interval_cluster_BGM.jpg" />
-Prazo                      | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/prazo_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/prazo_confidence_interval_cluster_BGM.jpg" />
-Longitude                  | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/longitude_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/longitude_confidence_interval_cluster_BGM.jpg" />
-Latitude                   | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/latitude_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/latitude_confidence_interval_cluster_BGM.jpg" />
+Preço                      | <img width="550" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/preco_confidence_interval_cluster_kmeans.jpg" /> | <img width="550" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/preco_confidence_interval_cluster_BGM.jpg" />
+Frete                      | <img width="550" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/frete_confidence_interval_cluster_kmeans.jpg" /> | <img width="550" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/frete_confidence_interval_cluster_BGM.jpg" />
+Prazo                      | <img width="550" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/prazo_confidence_interval_cluster_kmeans.jpg" /> | <img width="550" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/prazo_confidence_interval_cluster_BGM.jpg" />
+Longitude                  | <img width="550" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/longitude_confidence_interval_cluster_kmeans.jpg" /> | <img width="550" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/longitude_confidence_interval_cluster_BGM.jpg" />
+Latitude                   | <img width="550" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/latitude_confidence_interval_cluster_kmeans.jpg" /> | <img width="550" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/latitude_confidence_interval_cluster_BGM.jpg" />
 
 <div align="center"> 
 <p>Figure 7: Kmeans and bayesian gaussian mixture: comparing the differences in each variable.</p>
@@ -223,7 +223,7 @@ that the cluster 0 and 2 are different,  is the same from cluster 1 and 4, clust
 
 The chosen clustering method is bayesian gaussian mixture by vote of greater significant differences between clusters in the variables.
 
-# 6. Evaluating the *conversão total* in each cluster
+# 6. Evaluating the conversão total in each cluster
 
 Before clustering the dataset in the period 01/06/2020 - 31/07/2020, we are interested in the main objective: evaluate the main variables in each cluster.
 The conversão total is obtained taking the ratio of number of purchases to number of visits in such period. The next graphic shows the confidence interval of the main variable *conversão*.
@@ -252,6 +252,7 @@ through time, the cluster 2 is unstable through time (see also the Figure 8 - wi
 better behavior.
 
 The next graphics present the *conversão* through time with bootstrap conficencial intervals. The bootstrap conficencial intervals use sampling with replacement to obtain the quantile in the position 2.5% and 97.5%. 
+Teh green, blue, red, orange, purple and yellow lines represent the cluster 0, 1, 2 ,3 ,4 and 5 respectively.
 
 Clusters                   |           Cluster
 :-------------------------:|:-------------------------:
@@ -283,7 +284,7 @@ As variáveis escolhidas foram: preço, latitude e longitude. As variáveis lati
 A variável preço por ser muito interessante, este está uniformemente distribuida assim como o frete. 
 * Quais colunas sofreram maiores efeitos e quai sofretam menos?
 As variáveis que mais sofreram efeitos nos métodos de transformação como normalization e power transformer foram as variáveis que tem 
-um comportamente muito distante da normal por exemplo a variável preço, frete.
+um comportamente muito distante da distribuição normal por exemplo a variável preço, frete.
 
 * Quais clusters têm problemas para serem analisados?
 Os clusters 0,1,2 e 3 são os que tem maiores problemas no periodo total porque com un nível de significancia ao 5%, não tem-se suficiente evidência para estes sejam 
@@ -296,5 +297,5 @@ Se tomamos como referência no periodo total, os cluster 0, 1, 2 e 3 porque eles
 comportamento através do tempo o cluster 2 sería uma ótima opção, já que ele tem muita variabilidade, assim intentar estudar o porque dessa 
 variabilidade para ser reduzida.
 * Você consegue identificar algum fenômeno temporal que gere destaque a um ou mais clusters? 
-O cluster 2 tem heterocedasticidade(variação não constante ao longo do tempo) e problemas com a média(veja Figura  10). Nas Figuras 10 e 11, pode-se apreciar as cartas de control, assim, pontos
+O cluster 2 tem heterocedasticidade(variação não constante ao longo do tempo) e problemas com a média (veja Figura  10). Nas Figuras 10 e 11, pode-se apreciar as cartas de control, assim, pontos
 fora da linha inferior e superior indicam pontos anormais.  
