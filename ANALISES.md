@@ -38,7 +38,7 @@ to be considered to obtain clusters in the next section.
 
 ##### Scatter plots
 <div align="center">
-    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/before_scatter_semana1.png" />
+    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/before_scatter_semana1.png" />
     <p>Figure 1.1: Longitude vs latitude of the customers before transformation.</p>
 </div>
 <br>
@@ -47,17 +47,17 @@ to be considered to obtain clusters in the next section.
 
 Normalization              |  Standard scaler          | Max abs scaler
 :-------------------------:|:-------------------------:|:-------------------------:
-<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/after_normalization_scatter_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/aftet_scatter_standard_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/after_scatter_max_abs_semana1.png" />
+<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/after_normalization_scatter_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/aftet_scatter_standard_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/after_scatter_max_abs_semana1.png" />
 
 Min max scaler             |  Power transformer        | Robust scaler 
 :-------------------------:|:-------------------------:|:-------------------------:
-<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/after_min_max_scatter_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/after_scatter_power-transformer_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/after_scatter_robust_scaler_semana1.png" />
+<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/after_min_max_scatter_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/after_scatter_power-transformer_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/after_scatter_robust_scaler_semana1.png" />
 
 <p>Figure 1.2: Longitude vs latitude of the customers after transformation.</p>
 
 ##### Histograms plot
 <div align="center">
-    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/preco_before_semana1.png" />
+    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/preco_before_semana1.png" />
     <p>Figure 1.1: Frequency histogram of preço of the considered products from customers before transformation.</p>
 </div>
 <br>
@@ -66,11 +66,11 @@ Min max scaler             |  Power transformer        | Robust scaler
 
 Normalization              |  Standard scaler          | Max abs scaler
 :-------------------------:|:-------------------------:|:-------------------------:
-<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/normalization_after_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/standard_after_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/max_abs_after_semana1.png" />
+<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/normalization_after_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/standard_after_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/max_abs_after_semana1.png" />
 
 Min max scaler             |  Power transformer        | Robust scaler 
 :-------------------------:|:-------------------------:|:-------------------------:
-<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/min_max_after_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/powerTransformer_after_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana1/robust_scaler_after_semana1.png" />
+<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/min_max_after_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/powerTransformer_after_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/robust_scaler_after_semana1.png" />
 
 <p>Figure 2.2: Frequency histogram of preço of the considered products from customers after transformation.</p>
 
@@ -78,7 +78,7 @@ Min max scaler             |  Power transformer        | Robust scaler
 
 ##### Scatter plots
 <div align="center">
-    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/scatter_before_semana2.png" />
+    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/scatter_before_semana2.png" />
     <p>Figure 3.1: Longitude vs latitude of the customers before transformation.</p>
 </div>
 <br>
@@ -87,17 +87,17 @@ Min max scaler             |  Power transformer        | Robust scaler
 
 Normalization              |  Standard scaler          | Max abs scaler
 :-------------------------:|:-------------------------:|:-------------------------:
-<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/after_scatter_normalziation_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/after_scatter_standard_scaler_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/after_scatter_max_abs_semana2.png" />
+<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/after_scatter_normalziation_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/after_scatter_standard_scaler_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/after_scatter_max_abs_semana2.png" />
 
 Min max scaler             |  Power transformer        | Robust scaler 
 :-------------------------:|:-------------------------:|:-------------------------:
-<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/after_scatter_min_max_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/after_scatter_power_transformer_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/after_scatter_robust_scaler_semana2.png" />
+<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/after_scatter_min_max_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/after_scatter_power_transformer_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/after_scatter_robust_scaler_semana2.png" />
 
 <p>Figure 1.2: Longitude vs latitude of the customers after transformation.</p>
 
 ##### Histograms plot
 <div align="center">
-    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/preco_before_semana2.png" />
+    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/preco_before_semana2.png" />
     <p>Figure 3.1: Frequency histogram of preço of the considered products from customers before transformation.</p>
 </div>
 <br>
@@ -106,11 +106,11 @@ Min max scaler             |  Power transformer        | Robust scaler
 
 Normalization              |  Standard scaler          | Max abs scaler
 :-------------------------:|:-------------------------:|:-------------------------:
-<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/normalization_after_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/standard_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/max_abs_after_semana2.png" />
+<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/normalization_after_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/standard_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/max_abs_after_semana2.png" />
 
 Min max scaler             |  Power transformer        | Robust scaler 
 :-------------------------:|:-------------------------:|:-------------------------:
-<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/min_max_after_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/powerTransformer_after_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/semana2/robust_scaler_semana2.png" />
+<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/min_max_after_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/powerTransformer_after_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/robust_scaler_semana2.png" />
 
 <p>Figure 3.2: Frequency histogram of preço of the considered products from customers after transformation.</p>
 
@@ -148,7 +148,7 @@ the optimal number of cluster is the value of *K* that minimize the BIC in the t
 unobserved dataset(Observation: The BIC penalizes the -2 log likelihood by the number of parameters *log(n)). The following graph shows the results obtained.
 
 <div align="center">
-    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/otimo_number_of%20cluster/optimal_cluster_bgm.jpg" />
+    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/otimo_number_of%20cluster/optimal_cluster_bgm.jpg" />
     <p>Figure 4: BIC values from validation set using finite gaussian mixture .</p>
 </div>
 <br>
@@ -160,7 +160,7 @@ Also, I tried the GAP statistic using k-means. The GAP statistic, (see the origi
 In the next graph we can see different values of *K* with the respective GAP value.
  
  <div align="center">
-    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/otimo_number_of%20cluster/optimal_GAP.jpg" />
+    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/otimo_number_of%20cluster/optimal_GAP.jpg" />
     <p>Figure 5: GAP statistic from k-means .</p>
 </div>
 <br>
@@ -182,11 +182,11 @@ In the next graphics, different scatter plots are presented from the three types
 
 Scaling method             | Kmeans                    |  gaussian mixture         | bayesian gaussian mixture
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Standard scaler            |<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_kmeans_standard.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_gaussian_mixture_standard.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_bayesian_gaussian_mixture_standard.png" />
+Standard scaler            |<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_kmeans_standard.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_gaussian_mixture_standard.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_bayesian_gaussian_mixture_standard.png" />
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Min max scaler             |<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_kmeans_min_max.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_gaussian_mixture_min_max.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_bayesian_gaussian_mixture_min_max.png" />
+Min max scaler             |<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_kmeans_min_max.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_gaussian_mixture_min_max.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_bayesian_gaussian_mixture_min_max.png" />
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Max abs scaler             |<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_kmeans_max_abs.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_gaussian_mixture_max_abs.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_bayesian_gaussian_mixture_max_abs.png" />
+Max abs scaler             |<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_kmeans_max_abs.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_gaussian_mixture_max_abs.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_bayesian_gaussian_mixture_max_abs.png" />
 
 <p>Figure 6: Longitude vs latitude of the customers of B2W: three types of clustering and scaling methods.</p>
 
@@ -200,15 +200,15 @@ Next, to take a decision between kmeans and bayesian gaussian mixture, the follo
 
 Variable                   | kmeans                     | bayesian gaussian mixture
 :-------------------------:|:-------------------------:|:-------------------------:
-Preço                      | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/preco_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/preco_confidence_interval_cluster_BGM.jpg" />
+Preço                      | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/preco_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/preco_confidence_interval_cluster_BGM.jpg" />
 :-------------------------:|:-------------------------:|:-------------------------:
-Frete                      | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/frete_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/frete_confidence_interval_cluster_BGM.jpg" />
+Frete                      | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/frete_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/frete_confidence_interval_cluster_BGM.jpg" />
 :-------------------------:|:-------------------------:|:-------------------------:
-Prazo                      | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/prazo_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/prazo_confidence_interval_cluster_BGM.jpg" />
+Prazo                      | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/prazo_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/prazo_confidence_interval_cluster_BGM.jpg" />
 :-------------------------:|:-------------------------:|:-------------------------:
-Longitude                  | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/longitude_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/longitude_confidence_interval_cluster_BGM.jpg" />
+Longitude                  | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/longitude_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/longitude_confidence_interval_cluster_BGM.jpg" />
 :-------------------------:|:-------------------------:|:-------------------------:
-Latitude                   | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/latitude_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/latitude_confidence_interval_cluster_BGM.jpg" />
+Latitude                   | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/latitude_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/latitude_confidence_interval_cluster_BGM.jpg" />
 
 <p>Figure 7: Kmeans and bayesian gaussian mixture: comparing the differences in each variable.</p>
 
@@ -224,7 +224,7 @@ Before clustering the dataset in the period 01/06/2020 - 31/07/2020, we are inte
 The conversão total is obtained taking the ratio of number of purchases to number of visits in such period. The next graphic shows the confidence interval of the main variable *conversão*.
 
 <div align="center">
-    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/conversao/conversao_confidence_interval.jpg" />
+    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/conversao/conversao_confidence_interval.jpg" />
     <p>Figure 8: Differences in *conversão total* with their respective confidential intervals for each cluster.</p>
 </div>
 <br>
@@ -232,7 +232,7 @@ The conversão total is obtained taking the ratio of number of purchases to numb
 <br>
 
 <div align="center">
-    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/conversao/time_series_line.jpg" />
+    <img width="450" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/conversao/time_series_line.jpg" />
     <p>Figure 9: Time series(days) *conversão* by cluster.</p>
 </div>
 <br>
@@ -250,13 +250,13 @@ The next graphics present the *conversão* through time with bootstrap conficenc
 
 Clusters                   |           Cluster
 :-------------------------:|:-------------------------:
-<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/conversao/cluster_by_day_0_2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/conversao/cluster_by_day_3_5.png" /> 
+<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/conversao/cluster_by_day_0_2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/conversao/cluster_by_day_3_5.png" /> 
 
 <p>Figure 10: Time series(days) *conversão* by cluster and boostrap confidencial intervals at 95%.</p>
 
 Cluster                    |           Cluster
 :-------------------------:|:-------------------------:
-<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/conversao/cluster_by_hora_0_2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/branch-edit/resultados_gr%C3%A1ficos/conversao/cluster_by_hora_3_5.png" /> 
+<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/conversao/cluster_by_hora_0_2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/conversao/cluster_by_hora_3_5.png" /> 
 
 <p>Figure 11: Time series(hours) *conversão* by cluster and boostrap confidencial intervals at 95%.</p>
 
