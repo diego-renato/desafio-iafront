@@ -35,6 +35,10 @@ The developed library consists in processing raw data to obtain information abou
  *confidential_intervals_plot* and *scatter_plot* can be useful. Finally the *time_series_plot* obtain a time series plot of the conversao variale by the date that can be
  day, hour or by min. 
  
+ The library uses statistical and computing methods to obtain the best result, for example, the *gaussian_mixture* is useful to obtain the optimal number of cluster taking the
+ *BIC*(Bayesian Information Criterian), the *confidential_intervals_plot* and *time_series_plot* evaluate the estimation by confidential intervals using bootstrap or 
+ CLT(Central Limit Theorem). The *GAP_decision_plot* obtain and use the GAP statistic to compute the optimal number of cluster.
+ 
  To reproduce this results, please execute the Makefile in the root of the project. The *run_all* create a directory to save the results and then it execute the pipeline.
  To install in a virtualenv please use *pip3 install -e codigo/*. 
 # 4. Comparing different scaler functions
