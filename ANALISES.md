@@ -6,13 +6,13 @@
     - [3.2. Data transformation: scatter and hist (24-06-2020 to 30-06-2020)](#scatter-plots)
 - [4. The optimal number of clusters](#4-the-optimal-number-of-clusters)
 - [5. The optimal cluster algorithm](#5-the-optimal-cluster-algorithm)
-- [6. Evaluating the *conversão total* in each cluster](#6-evaluating-the-*conversão-total*-in-each-cluster)
+- [6. Evaluating the *conversão total* in each cluster](#6-evaluating-the-*-conversão-total-*-in-each-cluster)
 - [7. Answering the questions](#7-answering-the-questions)
 
 # 1. The problem
-B2W wants to know more about its customers, in the sense that B2W wants to know what is important to them, for this the B2W 
+B2W wants to know more about its customers, in the sense that B2W wants to know what is important to them, for this, B2W 
 data scientists propose to study the behavior of the total conversion through cluster formations. The total conversion is 
-the number of orders in relation  to the number of visits. Our objective in this challenge is to create a cluster to then be able
+the number of orders in relation  to the number of visits. Our objective in this challenge is to create clusters to then be able
  to analyze the main variable and make decisions. 
 # 2. The data
 The dataset contains variables about the products, customer location and the time. The variables selected for this analyses are :
@@ -34,7 +34,7 @@ to be considered to obtain clusters in the next section.
 * I considered in the scatter plot the variables <b>longitude</b> and <b>latitude</b>, because this variables generate a the distribution of the customer in Brazil.
 * I considered <b>preço</b> for the histogram.
 
-#### Data transformation: scatter and hist (01-06-2020 to 07-06-2020)
+### Data transformation: scatter and hist (01-06-2020 to 07-06-2020)
 
 ##### Scatter plots
 <div align="center">
@@ -53,7 +53,9 @@ Min max scaler             |  Power transformer        | Robust scaler
 :-------------------------:|:-------------------------:|:-------------------------:
 <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/after_min_max_scatter_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/after_scatter_power-transformer_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/after_scatter_robust_scaler_semana1.png" />
 
+<div align="center"> 
 <p>Figure 1.2: Longitude vs latitude of the customers after transformation.</p>
+</div>
 
 ##### Histograms plot
 <div align="center">
@@ -72,9 +74,11 @@ Min max scaler             |  Power transformer        | Robust scaler
 :-------------------------:|:-------------------------:|:-------------------------:
 <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/min_max_after_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/powerTransformer_after_semana1.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana1/robust_scaler_after_semana1.png" />
 
+<div align="center"> 
 <p>Figure 2.2: Frequency histogram of preço of the considered products from customers after transformation.</p>
+</div>
 
-#### Data transformation: scatter and hist (24-06-2020 to 30-06-2020)
+### Data transformation: scatter and hist (24-06-2020 to 30-06-2020)
 
 ##### Scatter plots
 <div align="center">
@@ -93,7 +97,9 @@ Min max scaler             |  Power transformer        | Robust scaler
 :-------------------------:|:-------------------------:|:-------------------------:
 <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/after_scatter_min_max_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/after_scatter_power_transformer_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/after_scatter_robust_scaler_semana2.png" />
 
+<div align="center"> 
 <p>Figure 1.2: Longitude vs latitude of the customers after transformation.</p>
+</div>
 
 ##### Histograms plot
 <div align="center">
@@ -112,7 +118,9 @@ Min max scaler             |  Power transformer        | Robust scaler
 :-------------------------:|:-------------------------:|:-------------------------:
 <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/min_max_after_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/powerTransformer_after_semana2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/semana2/robust_scaler_semana2.png" />
 
+<div align="center"> 
 <p>Figure 3.2: Frequency histogram of preço of the considered products from customers after transformation.</p>
+</div>
 
 Some observation for this section:
 * The standard, min-max, max abs and robust scalers have the best results in the sense that the variables have the same behaviour.
@@ -186,7 +194,9 @@ Standard scaler            |<img width="750" src="https://github.com/diego-renat
 Min max scaler             |<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_kmeans_min_max.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_gaussian_mixture_min_max.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_bayesian_gaussian_mixture_min_max.png" />
 Max abs scaler             |<img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_kmeans_max_abs.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_gaussian_mixture_max_abs.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/scatter_bayesian_gaussian_mixture_max_abs.png" />
 
+<div align="center"> 
 <p>Figure 6: Longitude vs latitude of the customers of B2W: three types of clustering and scaling methods.</p>
+</div>
 
 As we can see, the best results are from the standard scaler and from the kmeans and bayesian gaussian mixture. The main reason why the standard scaler is the best is because:
 
@@ -204,8 +214,9 @@ Prazo                      | <img width="750" src="https://github.com/diego-rena
 Longitude                  | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/longitude_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/longitude_confidence_interval_cluster_BGM.jpg" />
 Latitude                   | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/latitude_confidence_interval_cluster_kmeans.jpg" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/cluster_scatter_evaluation/latitude_confidence_interval_cluster_BGM.jpg" />
 
+<div align="center"> 
 <p>Figure 7: Kmeans and bayesian gaussian mixture: comparing the differences in each variable.</p>
-
+</div>
 
 The red, blue and green dots are the respective means, upper limit and lower limit of each variable. Statistically with 95% confidence(or 5% significance), there are non-significant clusters for example in kmeans and prazo variable, there is not enough evidence
 that the cluster 0 and 2 are different,  is the same from cluster 1 and 4, cluster 3 and 5.
@@ -246,13 +257,17 @@ Clusters                   |           Cluster
 :-------------------------:|:-------------------------:
 <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/conversao/cluster_by_day_0_2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/conversao/cluster_by_day_3_5.png" /> 
 
+<div align="center"> 
 <p>Figure 10: Time series(days) *conversão* by cluster and boostrap confidencial intervals at 95%.</p>
+</div>
 
 Cluster                    |           Cluster
 :-------------------------:|:-------------------------:
 <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/conversao/cluster_by_hora_0_2.png" /> | <img width="750" src="https://github.com/diego-renato/desafio-iafront/blob/master/resultados_gr%C3%A1ficos/conversao/cluster_by_hora_3_5.png" /> 
 
+<div align="center"> 
 <p>Figure 11: Time series(hours) *conversão* by cluster and boostrap confidencial intervals at 95%.</p>
+</div>
 
 # 7. Answering the questions
 
@@ -281,6 +296,5 @@ Se tomamos como referência no periodo total, os cluster 0, 1, 2 e 3 porque eles
 comportamento através do tempo o cluster 2 sería uma ótima opção, já que ele tem muita variabilidade, assim intentar estudar o porque dessa 
 variabilidade para ser reduzida.
 * Você consegue identificar algum fenômeno temporal que gere destaque a um ou mais clusters? 
-
-O cluster 2 tem heterocedasticidade(variação não constante ao longo do tempo). Nas Figuras 10 e 11, pode-se apreciar as cartas de control, assim, pontos
+O cluster 2 tem heterocedasticidade(variação não constante ao longo do tempo) e problemas com a média(veja Figura  10). Nas Figuras 10 e 11, pode-se apreciar as cartas de control, assim, pontos
 fora da linha inferior e superior indicam pontos anormais.  
