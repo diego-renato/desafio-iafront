@@ -22,7 +22,8 @@ The dataset contains variables about the products, customer location and the tim
 * latitude 
 * longitude 
 
-The considered period is from 01/06/2020 to 31/07/2020. The departaments selected are: 'agro_industria_e_comercio,automotivo,brinquedos,casa_conforto,eletrodomesticos,eletronicos,fashion_calcados,informatica_acessorios,telefonia'
+The considered period is from 01/06/2020 to 31/07/2020. The departaments selected from this analyse are: agro industria e comercio, automotivo,
+ brinquedos, casa conforto, eletrodomesticos, eletronicos, fashion calcados, informatica acessorios, telefonia.
 
 
 # 3. Comparing different scaler functions
