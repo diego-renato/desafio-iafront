@@ -41,7 +41,7 @@ The developed library consists in processing raw data to obtain information abou
  CLT(Central Limit Theorem). The `GAP_decision_plot` obtain and use the GAP statistic to compute the optimal number of cluster.
 
  To reproduce this results, please execute the Makefile in the root of the project. The `run_all` create a directory to save the results and then it execute the pipeline.
- To install in a virtualenv please use `pip3 install -e codigo/`. 
+ To install in a virtualenv please use `pip3 install -e` . 
 # 4. Comparing different scaler functions
 After scaling the data, is important to see the behavior of the scaled or transformed data.
 In this section I compared the different scaler jobs from the considered in this project for the week 01-06-2020 - 07-06-2020 and
