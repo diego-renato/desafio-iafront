@@ -25,22 +25,23 @@ The dataset contains variables about the products, customer location and the tim
 
 The considered period is from 01/06/2020 to 31/07/2020. The departaments selected from this analyse are: agro industria e comercio, automotivo,
  brinquedos, casa conforto, eletrodomesticos, eletronicos, fashion calcados, informatica acessorios, telefonia.
+ 
 # 3. The library
-The developed library consists in processing raw data to obtain information about some variables. Some functions like *prepara_pedidos*, *prepare_conversao*
- prepare the data to obtain the data joined or to obtain the *conversao* variable. The *standard_scaler*, *max_abs_scaler*, *min_max_scaler*, 
- *normalization_scaler*, *power_transformer* and *robust_scaler* transform or scale the selected variables, the functions create a directory with the respective name of
- the scale function. To obtain cluster there are 5 method considered, *kmeans*, *birch*, *mini_batch_kmeans*, *gaussian_mixture*, 
- *bayesian_gaussian_mixture* and *spectral_clustering*, this functions also create a directory too. But before, to evaluate the optimal number of cluster, 
- the *BIC_decision_plot*, *GAP_decision_plot* or *pca_plot* can help. Next, to evaluate the clusters considering the variables selected, the 
- *confidential_intervals_plot* and *scatter_plot* can be useful. Finally the *time_series_plot* obtain a time series plot of the conversao variale by the date that can be
+The developed library consists in processing raw data to obtain information about some variables. Some functions like `prepara_pedidos`, `prepare_conversao`
+ prepare the data to obtain the data joined or to obtain the *conversao* variable. The `standard_scaler`, `max_abs_scaler`, `min_max_scaler`, 
+ `normalization_scaler`, `power_transformer` and `robust_scaler` transform or scale the selected variables, the functions create a directory with the respective name of
+ the scale function. To obtain cluster there are 5 method considered, `kmeans`, `birch`, `mini_batch_kmeans`, `gaussian_mixture`, 
+ `bayesian_gaussian_mixture` and `spectral_clustering`, this functions also create a directory too. But before, to evaluate the optimal number of cluster, 
+ the `BIC_decision_plot`, `GAP_decision_plot` or `pca_plot` can help. Next, to evaluate the clusters considering the variables selected, the 
+ `confidential_intervals_plot` and `scatter_plot` can be useful. Finally the `time_series_plot` obtain a time series plot of the conversao variale by the date that can be
  day, hour or by min. 
  
- The library uses statistical and computing methods to obtain the best result, for example, the *gaussian_mixture* is useful to obtain the optimal number of cluster taking the
- *BIC*(Bayesian Information Criterian), the *confidential_intervals_plot* and *time_series_plot* evaluate the estimation by confidential intervals using bootstrap or 
- CLT(Central Limit Theorem). The *GAP_decision_plot* obtain and use the GAP statistic to compute the optimal number of cluster.
- 
- To reproduce this results, please execute the Makefile in the root of the project. The *run_all* create a directory to save the results and then it execute the pipeline.
- To install in a virtualenv please use *pip3 install -e codigo/*. 
+ The library uses statistical and computing methods to obtain the best result, for example, the `gaussian_mixture` is useful to obtain the optimal number of cluster taking the
+ *BIC*(Bayesian Information Criterian), the `confidential_intervals_plot` and `time_series_plot` evaluate the estimation by confidential intervals using bootstrap or 
+ CLT(Central Limit Theorem). The `GAP_decision_plot` obtain and use the GAP statistic to compute the optimal number of cluster.
+
+ To reproduce this results, please execute the Makefile in the root of the project. The `run_all` create a directory to save the results and then it execute the pipeline.
+ To install in a virtualenv please use `pip3 install -e codigo/`. 
 # 4. Comparing different scaler functions
 After scaling the data, is important to see the behavior of the scaled or transformed data.
 In this section I compared the different scaler jobs from the considered in this project for the week 01-06-2020 - 07-06-2020 and
@@ -144,7 +145,7 @@ Some observation for this section:
 * The standard, min-max and max abs scalers(in this order) have the best results because they don't modify the distributions of the points and also have similar statistics(mean and variance).
 * The methods selected are standard, min-max and max abs scalers.
 * The distribution are not affected by the time as we can see in the graphics. 
-* The variable price is continuous uniform distributed(all points have the same weight).
+* The variable price is continuous uniform distributed(all points have the same weight). Some others variables have the same behavior(continuous uniform distribution).
 # 5. The optimal number of clusters
 <b>OBS.</b> Because the distribution of the variables considered for clustering are not affected by the time, I decided to make decisions(optimal *K* and best clustering method) taking a sample like 1 week.
  
@@ -179,7 +180,7 @@ unobserved dataset(Observation: The BIC penalizes the -2 log likelihood by the n
 <br>
 <br>
 
-Also, I tried the GAP statistic using k-means. The GAP statistic, (see the original paper[GAP](https://statweb.stanford.edu/~gwalther/gap)), is obtained by taking the expected value
+Also, I tried the GAP statistic using k-means. The GAP statistic, (see the original paper [GAP](https://statweb.stanford.edu/~gwalther/gap)), is obtained by taking the expected value
  of the mean for every distance pairwase for each cluster minus the logarithm of this mean. The optimal number of *K* is that maximize the GAP statistic.
 In the next graph we can see different values of *K* with the respective GAP value.
  
@@ -268,7 +269,7 @@ through time, the cluster 2 is unstable through time (see also the Figure 8 - wi
 better behavior.
 
 The next graphics present the *conversão* through time with bootstrap conficencial intervals. The bootstrap conficencial intervals use sampling with replacement to obtain the quantile in the position 2.5% and 97.5%. 
-Teh green, blue, red, orange, purple and yellow lines represent the cluster 0, 1, 2 ,3 ,4 and 5 respectively.
+The green, blue, red, orange, purple and yellow lines represent the cluster 0, 1, 2 ,3 ,4 and 5 respectively.
 
 Clusters                   |           Cluster
 :-------------------------:|:-------------------------:
